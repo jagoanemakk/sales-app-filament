@@ -48,7 +48,11 @@ cp .env.example. .env
 Migrate database by running artisan migration
 
 ```
-php artisan migrate
-
 php artisan db:seed
+```
+
+Or you can migrate by dropping all the database before
+
+```
+php artisan migrate:fresh --seed
 ```
